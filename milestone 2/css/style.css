@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+header img {
+    display: block;    
+    margin: auto;    
+    height: 210px;
+    margin-top: 30px;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.todo_list {
+    width: 65%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.todo_item {
+    background-color: lightgrey;
+    padding: 10px 15px;
+}
+
+.todo_delete {
+    float: right;
+}
+
+.done {
+    text-decoration: line-through;
+}
