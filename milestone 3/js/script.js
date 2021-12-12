@@ -24,8 +24,19 @@ const list = new Vue (
             ]
         },
         methods: {
+
             deleteToDo: function(index) {
                 this.todo_list.splice(index, 1);
+            },
+            addToDo: function() {
+                const newToDoTrim = this.newToDo.trim();
+                if(newToDoTrim.length > 0) {
+                    this.todo_list.push({
+                        text: newToDoTrim,
+                        done: false
+                    });
+                    this.newToDo = '';
+                }
             }
         }
     }
